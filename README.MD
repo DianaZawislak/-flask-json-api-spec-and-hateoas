@@ -1,8 +1,8 @@
 # Flask JSON API SPEC and HATEOAS
 
-### Name: <Insert Here>
+### Name: Diana Zawislak
 
-### UCID: <Insert Here>
+### UCID: DZ29
 
 ## Introduction
 
