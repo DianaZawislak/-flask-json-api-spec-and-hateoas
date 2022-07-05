@@ -82,7 +82,7 @@ def j(*args, **kwargs):
     return response
 
 
-@api.route("/counties/", methods=["GET"])
+@api.route("/countries/", methods=["GET"])
 class Countries(Resource):
     @ns.doc('get_countries')
     def get(self):
@@ -91,7 +91,7 @@ class Countries(Resource):
         return j(data)
 
 
-@api.route("/counties/<int:country_id>", methods=["GET"])
+@api.route("/countries/<int:country_id>", methods=["GET"])
 class Country(Resource):
     @ns.doc('get_country')
     def get(self, country_id):
@@ -100,7 +100,7 @@ class Country(Resource):
         return j(data)
 
 
-@api.route("/cites/", methods=["GET"])
+@api.route("/cities/", methods=["GET"])
 class Cities(Resource):
     @ns.doc('get_cities')
     def get(self):
@@ -110,7 +110,7 @@ class Cities(Resource):
         return j(data)
 
 
-@api.route("/cies/<int:city_id>", methods=["GET"])
+@api.route("/cities/<int:city_id>", methods=["GET"])
 class City(Resource):
     @ns.doc('get_city')
     def get(self, city_id):
